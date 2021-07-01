@@ -1,0 +1,5 @@
+<app-recipe-item></app-recipe-item>
+<a href="#" *ngFor="let recipe of recipes">
+  <div>{{recipe.name}}</div>
+  <img [src]="recipe.imagePath" [alt]="recipe.name" class="w-auto h-16">
+</a>
