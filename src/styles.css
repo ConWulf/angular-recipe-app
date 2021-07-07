@@ -4,3 +4,17 @@
 
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+
+@layer base {
+  html, body {
+    @apply w-screen h-screen;
+  }
+
+  @layer components {
+
+    .collapse .menu {
+      @apply hidden;
+    }
+  }
+}

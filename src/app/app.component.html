@@ -1,2 +1,5 @@
-<app-header></app-header>
-<app-recipe-list></app-recipe-list>
+<app-header (linkEvent)="showList($event)"></app-header>
+<app-recipe-list *ngIf="showCurrent; else shoppingList"></app-recipe-list>
+<ng-template #shoppingList>
+<app-shopping-list></app-shopping-list>
+</ng-template>
