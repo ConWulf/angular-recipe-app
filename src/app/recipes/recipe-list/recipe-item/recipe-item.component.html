@@ -1,5 +1,5 @@
 
-  <a (click)="onShowDetails(recipeItem)" *ngIf="recipeItem !== undefined" href="/recipe/{id}">
+  <a (click)="onShowDetails()" *ngIf="recipeItem !== undefined" href="/recipe/{id}">
     <div>{{recipeItem.name}}</div>
     <img [src]="recipeItem.imagePath" [alt]="recipeItem.name" class="w-auto h-16">
       <div>{{recipeItem.description}}</div>

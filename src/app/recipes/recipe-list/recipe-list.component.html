@@ -1,2 +1,2 @@
-<app-recipe-item (showDetails)="display($event)" *ngFor="let recipe of recipes" [recipeItem]="recipe"></app-recipe-item>
+<app-recipe-item (click)="display()" *ngFor="let recipe of recipes" [recipeItem]="recipe"></app-recipe-item>
 <app-recipe-details *ngIf="showDetails" [recipe]="recipe"></app-recipe-details>

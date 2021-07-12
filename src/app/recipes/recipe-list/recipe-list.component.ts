@@ -18,9 +18,8 @@ export class RecipeListComponent implements OnInit {
     this.recipes = this.recipeService.recipes;
   }
 
-display(e : Recipe) : void {
+display() : void {
   this.showDetails = !this.showDetails
-  this.recipe = e;
 }
 
 }
